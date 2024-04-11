@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C++ Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Needs: 10 <p>, 5 <code>, and 5 <li> -->
+    <main id="main-doc">
+      <nav id="navbar">
+        <header class="nav-header"><h1>C++ Documentation</h1></header>
+        <div class="nav-items">
+          <a href="#Introduction_to_C++" class="nav-link">Introduction to C++</a>
+          <a href="#Setting_Up_C++" class="nav-link">Setting Up C++</a>
+          <a href="#Basic_Syntax" class="nav-link">Basic Syntax</a>
+          <a href="#Control_Structures" class="nav-link">Control Structures</a>
+          <a href="#Functions" class="nav-link">Functions</a>
+          <a href="#Object-Oriented_Programming_Basics" class="nav-link">Object-Oriented Programming Basics</a>
+          <a href="#Reference" class="nav-link">Reference</a>
+        </div>
+      </nav>
+
+      <div class="content-wrapper">
+        <section id="Introduction_to_C++" class="main-section">
+          <header class="item-header"><h2>Introduction to C++</h2></header>
+          <div class="item-content">
+            <p>C++ is a middle-level programming language developed by Bjarne Stroustrup in 1979 at Bell Labs. It offers a blend of high-level and low-level features and is well-suited for developing hardware-operable software as well as large systems with sophisticated graphical user interfaces.</p>
+            <p>Example of C++ printing "Hello World!":</p>
+            <code>
+              #include &lt;iostream&gt;<br />
+              using namespace std;<br />
+              <br />
+              int main() {<br />
+              &nbsp;&nbsp;cout &lt;&lt; "Hello World!" &lt;&lt; endl;<br />
+              &nbsp;&nbsp;return 0;<br />
+              }
+            </code>
+            <p>C++...</p>
+            <ul>
+              <li>was developed by Bjarn Stroustrup</li>
+              <li>first appeared in 1985</li>
+              <li>was standardized by ISO and ANSI</li>
+              <li>supports procedural, object-oriented, and generic programming</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="Setting_Up_C++" class="main-section">
+          <header class="item-header"><h2>Setting Up C++</h2></header>
+          <div class="item-content">
+            <p>Setting up C++ development environment depends on your operating system. Windows users typically use Visual Studio, while macOS users might use Xcode, and Linux users tend to prefer using GNU Compiler Collection (GCC).</p>
+            <p>Basic steps to setup C++ environment:</p>
+            <ul>
+              <li>Install a text editor (e.g., VSCode, Atom)</li>
+              <li>Install C++ compiler (GCC for Linux, MSCV for Windows)</li>
+              <li>Configure your development environment to your liking</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="Basic_Syntax" class="main-section">
+          <header class="item-header"><h2>Basic Syntax</h2></header>
+          <div class="item-content">
+            <p>C++ syntax is robust and flexible, providing constructs that can map efficiently to typical machine instructions. It also supports data abstraction, object-oriented, and generic programming.</p>
+            <p>Basic syntax example &lpar;variables and output&rpar;:</p>
+            <code>
+              #include &lt;iostream&gt;<br />
+              <br />
+              int main() {<br />
+              &nbsp;&nbsp;int num = 10;<br />
+              &nbsp;&nbsp;std::cout &lt;&lt; "Number: " &lt;&lt; num &lt;&lt; std::endl;<br />
+              &nbsp;&nbsp;return 0;<br />
+              }
+            </code>
+            <p>Fundamental syntax elements in C++:</p>
+            <ul>
+              <li>Statements and functions</li>
+              <li>Data types (int, float, double)</li>
+              <li>Conditionals (if, else)</li>
+              <li>Loops (for, while)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="Control_Structures" class="main-section">
+          <header class="item-header"><h2>Control Structures</h2></header>
+          <div class="item-content">
+            <p>C++ provides all the typical control structures expected in a high-level language. These include conditionals, loops and case statements, which are used for creating versatile and dynamic algorithms.</p>
+            <p>Example of control structures&lpar;loops and conditionals&rpar;:</p>
+            <code>
+              for (int i = 0; i &lt; 10; i++) {<br />
+              &nbsp;&nbsp;if (i % 2 == 0) {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;std::cout &lt;&lt; i &lt;&lt; " is even" &lt;&lt; std::endl;<br />
+              &nbsp;&nbsp;}<br />
+              }
+            </code>
+            <p>Common control structures in C++:</p>
+            <ul>
+              <li>if, else-if, else</li>
+              <li>while, do-while loops</li>
+              <li>for loops</li>
+              <li>switch-case statements</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="Functions" class="main-section">
+          <header class="item-header"><h2>Functions</h2></header>
+          <div class="item-content">
+            <p>Functions in C++ help in modularizing the code. Each function can perform a specific task and can be called multiple times throughout the program which helps in reducing code redundancy and increases reusability.</p>
+            <p>Example function in C++ - Adding two numbers:</p>
+            <code>
+              int add(int a, int b) {<br />
+              &nbsp;&nbsp;return a + b;<br />
+              }<br />
+              <br />
+              int main() {<br />
+              &nbsp;&nbsp;int sum = add(5, 3);<br />
+              &nbsp;&nbsp;std::cout &lt;&lt; "Sum is: " &lt;&lt; sum &lt;&lt; std::endl;<br />
+              &nbsp;&nbsp;return 0;<br />
+              }
+            </code>
+          </div>
+        </section>
+
+        <section id="Object-Oriented_Programming_Basics" class="main-section">
+          <header class="item-header"><h2>Object-Oriented Programming Basics</h2></header>
+          <div class="item-content">
+            <p>Object-oriented programming (OOP) in C++ is a paradigm based on the concept of wrapping data and functions that work on the data within a single unit called an object.</p>
+            <p>Basic OOP example &lpar;classes&rpar; in C++:</p>
+            <code>
+              class Car {<br />
+              public:<br />
+              &nbsp;&nbsp;string color;<br />
+              &nbsp;&nbsp;string manufacturer;<br />
+              &nbsp;&nbsp;void drive() {<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;std::cout &lt;&lt; "The " &lt;&lt; color &lt;&lt; " car is driving." &lt;&lt; std::endl;<br />
+              &nbsp;&nbsp;}<br />
+              };
+            </code>
+            <p>Core components of OOP in C++:</p>
+            <ul>
+              <li>Class and Object fundamentals</li>
+              <li>Attributes and Methods</li>
+              <li>Constructors and Destructors</li>
+              <li>Access specifiers (private, protected, public)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="Reference" class="main-section">
+          <header class="item-header"><h2>Reference</h2></header>
+          <div class="item-content">
+            <p>All documentation on this page is from:</p>
+            <ul>
+              <li><a href="https://cplusplus.com/">cplusplus.com</a></li>
+              <li><a href="https://en.cppreference.com/w/">hcppreference.com</a></li>
+              <li><a href="https://devdocs.io/cpp/">devdocs C++ documentation</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="bottom-tag">
+          &copy; <span class="jame">jame<span class="dollar">$</span><span class="shift4">SHIFT4</span></span>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
